@@ -34,7 +34,7 @@
     content: '';
     background: rgb(225, 121, 121);
     width: 0%;
-    height: 2px;
+    height: 20px;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -66,6 +66,10 @@
     box-sizing: border-box;
     margin-bottom: 1%;
     transition: 0.5s;
+}
+.col:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0,0,0.2);
+    cursor: pointer;
 }
 .footer{
     text-align: center;

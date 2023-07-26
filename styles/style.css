@@ -41,7 +41,7 @@
     content: '';
     background: rgb(225, 121, 121);
     width: 0%;
-    height: 2px;
+    height: 20px;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -72,7 +72,7 @@
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
-    padding: 12px;
+    padding: 40px;
     background: transparent;
     position: relative;
     font-size: 4rem ;
