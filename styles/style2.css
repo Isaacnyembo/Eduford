@@ -19,7 +19,7 @@
 
 }
 .nav img{
-    width: 150px;
+    width: 150%;
     margin-top: 15px;
 }
 .nav-links  ul{
@@ -34,6 +34,7 @@
     display: inline-block;
     padding: 8px 12px ;
     position: relative;
+    font-size: 3rem;
     
 }
 .nav-links  ul li::after{
@@ -58,27 +59,34 @@
     width: 90%;
 }
 .text-box h1{
-    font-size: 40px;
+    font-size: 100px;
    
 }
 .text-box p{
-    font-size: 14px;
+    font-size: 50px;
     margin: 10px 0 42px;
+}
+.text{
+    font-size: 4rem;
+}
+.info-col img{
+    width: 160rem;
 }
 
 .hero-btn{
-    text-align: center;
     text-decoration: none;
     color: #f44336 ;
     border: 1px solid #f44336;
     padding: 12px;
-    margin-top: 20px;
+    margin-top: 4%;
     background: transparent;
     position: absolute;
-    font-size: 15px ;
+    left: 15%;
+    font-size: 5rem ;
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.5s;
+    border-radius: 15px;
 }
 
 .hero-btn:hover{
@@ -100,19 +108,19 @@
     display: flex;
     width: 80%;
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
 }
 .info-col{
     margin-top: 50px;
-    width: 50%;
+    width: 100%;
     border-radius: 10px;
 }
 .info-col img{
-    width: 100vh;
+    margin-left: 10px;
+    max-width: 100%;
     border-radius: 20px;
 }
-.info-col h1{
-    font-size: 30px;
+.info-col h2{
     font-weight: 600;
     text-align: left;
 }
@@ -123,14 +131,17 @@
 .footer{
     text-align: center;
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-.footer h4{
-    font-size: 30px;
-    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 5rem;
 }
 
+.title{
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 5rem;
+}
 
 .icons .fa-brands{
     margin: 0 13px;
@@ -143,9 +154,15 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
-@media(max-width:700px){
+@media(max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
     .text-box h1{
-        font-size: 20px;
+        font-size: 40px;
     }
     .text-box p{
         font-size: 8px;
@@ -154,9 +171,10 @@
         display: block;
     }
     .nav-links{
+        display: none;
         position: absolute;
         top: 0;
-        right: -200px;
+        right: 0;
         background:rgb(225, 121, 121) ;
         width: 200px;
         height: 100vh;
@@ -174,10 +192,46 @@
         color: #fff;
         font-size: 25px;
     }
+    .info{
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        display: block;
+        
+    }
     .row{
-        flex-direction: column;
+        display: block;
+       width: 90%;
+       
     }
     .cta h1{
         font-size: 20px;
+    }
+    .info-col h2{
+        text-align: center;
+        
+    }
+    .info-col p{
+        text-align: center;
+    }
+    .info-col{
+        position: absolute;
+        left: auto;
+        background-color: #f44336;
+        
+    }
+    .info-col img{
+        
+        width: 450px;
+        
+    }
+    .banner{
+        background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../images/background.jpg);
+        min-height: 50vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        width: 30rem;
+    
     }
 }
